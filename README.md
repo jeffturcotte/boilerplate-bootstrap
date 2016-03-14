@@ -5,16 +5,6 @@ Sometimes a backend engineer is tied up and you need to get going on a project.
 
 This project includes simple routing, twig templating, and scss compilation.
 
-In the root directory run 
-
-`$ php -S localhost:8000`  
-
-In your browser go to the url
-
-`http://localhost:8000`
-
-or set up a local environment
-
 Install composer dependencies
 
 `$ composer install`
@@ -34,3 +24,12 @@ Or to watch files and compile on change
 to tidy up code
 
 `$ gulp comb`
+
+
+In the root directory run 
+
+`$ php -S localhost:8000`  
+
+In your browser go to the url
+
+`http://localhost:8000`
