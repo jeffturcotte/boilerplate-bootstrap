@@ -29,8 +29,8 @@ To compile sass
 
 Or to watch files and compile on change
 
-`$gulp watch`
+`$ gulp watch`
 
 to tidy up code
 
-`$gulp comb`
+`$ gulp comb`
