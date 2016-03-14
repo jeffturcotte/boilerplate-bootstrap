@@ -9,7 +9,11 @@ In the root directory run
 
 `$ php -S localhost:8000`  
 
-or set up a local environment pointing to root directory
+In your browser go to the url
+
+`http://localhost:8000`
+
+or set up a local environment
 
 Install composer dependencies
 
@@ -21,7 +25,7 @@ Install node dependencies
 
 To compile sass
 
-`$ gulp sass'
+`$ gulp sass`
 
 Or to watch files and compile on change
 
