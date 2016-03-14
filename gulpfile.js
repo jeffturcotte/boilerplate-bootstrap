@@ -39,6 +39,4 @@ gulp.task('watch', function () {
     //Just Compile Sass
     gulp.watch(fileConfig.source, ['sass']);
 
-    //Compile and Transfer
-    //gulp.watch(fileConfig.source, ['sass', 'transfer']);
 });
