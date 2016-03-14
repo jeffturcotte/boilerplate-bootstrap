@@ -8,14 +8,14 @@ var csscomb = require('gulp-csscomb');
 /* == Config == */
 
 var directoryConfig = {
-    sass: './css/',
+    sass: ' ./docroot/css/',
     source: [this.sass + '*', '!**/node_modules/**'],
-    destination: './css'
+    destination: ' ./docroot/css'
 };
 
 var fileConfig = {
-    source: './css/**/*.scss',
-    destination: './css'
+    source: ' ./docroot/css/**/*.scss',
+    destination: ' ./docroot/css'
 };
 
 /* == End Config == */
