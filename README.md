@@ -26,7 +26,7 @@ to tidy up code
 `$ gulp comb`
 
 
-In the root directory run 
+In the /docroot directory run 
 
 `$ php -S localhost:8000`  
 
