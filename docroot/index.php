@@ -7,14 +7,14 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 	'twig.path' => __DIR__.'/view',
 ));
 
-//Define your routes
+// Home route
 $app->get('/', function () use ($app) {
 	return $app['twig']->render('home.html.twig');
 });
 
-$app->get('/master', function () use ($app) {
-	return $app['twig']->render('master.html.twig');
-});
-
+// Catch all route for views
+$app->get('/{view}', function ($view) use ($app) {
+    return $app['twig']->render($view . '.html.twig');
+})->assert('view', '.*');
 
 $app->run();
