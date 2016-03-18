@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var csscomb = require('gulp-csscomb');
+var autoprefixer = require('gulp-autoprefixer');
 
 /* == Config == */
 
@@ -32,6 +33,14 @@ gulp.task('sass', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(sass({outputStyle: 'expanded'}))
+        .pipe(autoprefixer([
+            'Android >= 4.1',
+            'last 5 Chrome versions',
+            'last 5 Firefox versions',
+            'Explorer >= 11',
+            'iOS >= 8',
+            'Safari >= 9'
+        ]))
         .pipe(gulp.dest(fileConfig.destination));
 });
 
